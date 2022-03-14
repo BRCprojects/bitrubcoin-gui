@@ -21,7 +21,7 @@ jobs:
     - name: build
       run: export PATH=$PATH:/usr/local/opt/qt/bin && ./build.sh
     - name: test qml
-      run: build/release/bin/aeon-wallet-gui.app/Contents/MacOS/aeon-wallet-gui --test-qml
+      run: build/release/bin/bitrubcoin-wallet-gui.app/Contents/MacOS/bitrubcoin-wallet-gui --test-qml
     - name: deploy
       run: make deploy
       working-directory: build
@@ -32,7 +32,7 @@ jobs:
       working-directory: monero
     - name: archive
       run: |
-        export ARTIFACT_NAME="aeon-gui-mac-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="bitrubcoin-gui-mac-x64-$(git describe --tags)"
         mkdir $ARTIFACT_NAME
         cp -rf bin/* $ARTIFACT_NAME
         tar cvzf $ARTIFACT_NAME.tar.bz2 $ARTIFACT_NAME
@@ -65,14 +65,14 @@ jobs:
         echo "Acquire::ftp::Timeout \"120\";" | sudo tee -a /etc/apt/apt.conf.d/80-custom
     - name: update apt
       run: sudo apt update
-    - name: install aeon dependencies
+    - name: install bitrubcoin dependencies
       run: sudo apt -y install build-essential cmake libboost-all-dev miniupnpc libunbound-dev graphviz doxygen libunwind8-dev pkg-config libssl-dev libzmq3-dev libsodium-dev libnorm-dev libpgm-dev
-    - name: install aeon gui dependencies
+    - name: install bitrubcoin gui dependencies
       run: sudo apt -y install qtbase5-dev qt5-default qtdeclarative5-dev qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtquick-dialogs qml-module-qtquick-xmllistmodel qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel qttools5-dev-tools qml-module-qtquick-templates2 libqt5svg5-dev xvfb
     - name: build
       run: ./build.sh
     - name: test qml
-      run: xvfb-run -a build/release/bin/aeon-wallet-gui --test-qml
+      run: xvfb-run -a build/release/bin/bitrubcoin-wallet-gui --test-qml
     - name: deploy
       run: make deploy
       working-directory: build
@@ -83,7 +83,7 @@ jobs:
       working-directory: monero
     - name: archive
       run: |
-        export ARTIFACT_NAME="aeon-gui-linux-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="bitrubcoin-gui-linux-x64-$(git describe --tags)"
         mkdir $ARTIFACT_NAME
         cp -rf bin/* $ARTIFACT_NAME
         tar cvzf $ARTIFACT_NAME.tar.bz2 $ARTIFACT_NAME
@@ -116,10 +116,10 @@ jobs:
         install: mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-protobuf-c git mingw-w64-x86_64-qt5 mingw-w64-x86_64-hidapi zip curl
     - name: build
       run: |
-        sed -i 's/CONFIG\ +=\ qtquickcompiler//' aeon-wallet-gui.pro
+        sed -i 's/CONFIG\ +=\ qtquickcompiler//' bitrubcoin-wallet-gui.pro
         ./build.sh release
     - name: test qml
-      run: build/release/bin/aeon-wallet-gui --test-qml
+      run: build/release/bin/bitrubcoin-wallet-gui --test-qml
     - name: deploy
       run: make deploy
       working-directory: build
@@ -130,7 +130,7 @@ jobs:
       working-directory: monero
     - name: archive
       run: |
-        export ARTIFACT_NAME="aeon-gui-win-x64-$(git describe --tags)"
+        export ARTIFACT_NAME="bitrubcoin-gui-win-x64-$(git describe --tags)"
         mkdir $ARTIFACT_NAME
         cp -rf bin/* $ARTIFACT_NAME
         zip -r9 $ARTIFACT_NAME.zip $ARTIFACT_NAME

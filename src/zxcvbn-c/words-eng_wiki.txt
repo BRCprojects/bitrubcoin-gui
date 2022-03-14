@@ -896,7 +896,7 @@ empire             203594
 youth              203497
 god                202278
 closed             202092
-theory             201932
+theory             202232
 victory            201700
 writer             201479
 italy              201467
@@ -2071,7 +2071,7 @@ proved             92129
 why                92104
 eye                92082
 links              92027
-structures         92019
+structures         92022
 athletic           91939
 birds              91867
 contest            91822
@@ -2939,7 +2939,7 @@ file               62103
 springs            62065
 safe               62034
 missions           62029
-classified         62019
+classified         62022
 13th               62009
 annually           61894
 extreme            61891
@@ -4056,7 +4056,7 @@ keith              42047
 ibn                42031
 speakers           42023
 programmes         42022
-sharing            42019
+sharing            42022
 resource           42012
 bone               42012
 argument           41978
@@ -31769,13 +31769,13 @@ affinities         2020
 chesney            2020
 chl                2020
 fluently           2020
-emanating          2019
-fosse              2019
-anglicized         2019
-sportscar          2019
-botanists          2019
-footnote           2019
-arian              2019
+emanating          2022
+fosse              2022
+anglicized         2022
+sportscar          2022
+botanists          2022
+footnote           2022
+arian              2022
 altona             2018
 dravida            2018
 margate            2018
@@ -42034,7 +42034,7 @@ cantrell           1271
 alumna             1271
 shur               1271
 milliken           1271
-aeon               1271
+bitrubcoin               1271
 kenmore            1271
 mankato            1271
 zdroj              1271
@@ -61257,7 +61257,7 @@ silmarillion       689
 fiends             689
 oddball            689
 madinah            689
-palaeontology      689
+palbitrubcointology      689
 kirchberg          689
 ferrets            689
 cortese            689
@@ -62706,7 +62706,7 @@ enceladus          664
 cbm                664
 dtt                664
 flav               664
-palaeontologist    664
+palbitrubcointologist    664
 rego               664
 krka               664
 donde              664
@@ -89630,7 +89630,7 @@ goddamn            372
 extremis           372
 disclaimed         372
 gaviria            372
-palaeontological   372
+palbitrubcointological   372
 vrbas              372
 jorgenson          372
 intertribal        372
@@ -95985,7 +95985,7 @@ specialisms        333
 hwanghae           333
 laudable           333
 xingmi             333
-paeonia            333
+pbitrubcoinia            333
 peste              333
 amyntas            333
 nightcap           333
@@ -96483,7 +96483,7 @@ bandurist          330
 arabization        330
 licensor           330
 riverland          330
-aeons              330
+bitrubcoins              330
 colossians         330
 nujoma             330
 gramont            330

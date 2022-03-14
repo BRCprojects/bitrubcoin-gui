@@ -190,7 +190,7 @@ Item {
             anchors.topMargin: 8 * scaleRatio
             anchors.left: parent.left
             anchors.leftMargin: 12 * scaleRatio
-            source: "../images/aeonIcon-28x28.png"
+            source: "../images/bitrubcoinIcon-28x28.png"
             visible: false
         }
 

@@ -173,7 +173,7 @@ ListView {
                         _amount = (_amount *1);
                     }
 
-                    return _amount + " AEON";
+                    return _amount + " BITRUBCOIN";
                 }
                 color: isOut ? MoneroComponents.Style.white : MoneroComponents.Style.green
 
@@ -327,7 +327,7 @@ ListView {
                     if(!isOut && !fee){
                         return "-";
                     } else if(isOut && fee){
-                        return fee + " AEON";
+                        return fee + " BITRUBCOIN";
                     } else {
                         return "Unknown"
                     }

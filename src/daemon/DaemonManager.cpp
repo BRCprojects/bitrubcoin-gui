@@ -74,7 +74,7 @@ bool DaemonManager::start(const QString &flags, NetworkType::Type nettype, const
 
 
 
-    qDebug() << "starting aeond " + m_monerod;
+    qDebug() << "starting bitrubcoind " + m_monerod;
     qDebug() << "With command line arguments " << arguments;
 
     m_daemon = new QProcess();
@@ -166,9 +166,9 @@ bool DaemonManager::stopWatcher(NetworkType::Type nettype) const
             if(counter >= 5) {
                 qDebug() << "Killing it! ";
 #ifdef Q_OS_WIN
-                QProcess::execute("taskkill /F /IM aeond.exe");
+                QProcess::execute("taskkill /F /IM bitrubcoind.exe");
 #else
-                QProcess::execute("pkill aeond");
+                QProcess::execute("pkill bitrubcoind");
 #endif
             }
 
@@ -300,9 +300,9 @@ DaemonManager::DaemonManager(QObject *parent)
 
     // Platform depetent path to monerod
 #ifdef Q_OS_WIN
-    m_monerod = QApplication::applicationDirPath() + "/aeond.exe";
+    m_monerod = QApplication::applicationDirPath() + "/bitrubcoind.exe";
 #elif defined(Q_OS_UNIX)
-    m_monerod = QApplication::applicationDirPath() + "/aeond";
+    m_monerod = QApplication::applicationDirPath() + "/bitrubcoind";
 #endif
 
     if (m_monerod.length() == 0) {
